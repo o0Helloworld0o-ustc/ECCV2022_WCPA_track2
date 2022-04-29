@@ -1,0 +1,8 @@
+numpy==1.21.6
+scipy==1.7.3
+pandas==1.3.5
+Cython
+jupyter
+matplotlib
+opencv-python==4.5.5.64
+trimesh==3.11.2
