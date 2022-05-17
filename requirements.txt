@@ -6,3 +6,5 @@ jupyter
 matplotlib
 opencv-python==4.5.5.64
 trimesh==3.11.2
+scikit-learn==1.0.2
+dominate>=2.4.0
