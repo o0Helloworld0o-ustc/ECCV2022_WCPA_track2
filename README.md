@@ -52,7 +52,7 @@ Go to `visualization.ipynb` and learn about the detail of the data format.
 
 The simplest solution is to directly regress the 3D vertices and 6DoF (euler angles and translation vector) from the 800x800 image, leading to a score of 200\~300 on the leaderboard. If you are interested, you can implement the solution yourself. Obviously, the performance of this method is very limited.
 
-![img1](imgs/img1.jpg)
+<img src='imgs/img1.jpg'/>
 
 
 
@@ -61,8 +61,8 @@ The simplest solution is to directly regress the 3D vertices and 6DoF (euler ang
 
 We provide a quick and effective baseline as a reference. The intuition is that the face shape should be predicted from local facial region while the 6DoF (euler angles and translation vector) is easier to obtain from the global image. Therefore, we crop the local facial region, resize it to 256x256, and then feed it into the ResNet to predict the 1,220 vertices. In the original 800x800 image, we blacken the region outside the face, then resize the image to 256x256, and feed it to another ResNet to predict 6DOF information. The framework of the baseline is illustrated bellow. 
 
+<img src='imgs/img2.jpg'/>
 
-![img2](imgs/img2.jpg)
 
 
 
